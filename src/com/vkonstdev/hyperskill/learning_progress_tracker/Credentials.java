@@ -23,7 +23,7 @@ public class Credentials {
             System.out.println("Incorrect email.");
             return false;
         }
-        String lastName = credentials.split(email)[0].strip().split("\\s+", 2)[1];
+        String lastName = credentials.substring(credentials.indexOf(" "), credentials.lastIndexOf(" ")).trim();
         if (!isLastNameValid(lastName)) {
             System.out.println("Incorrect last name.");
             return false;

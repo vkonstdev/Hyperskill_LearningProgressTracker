@@ -66,7 +66,7 @@ public class Tracker {
         String[] parts = credentials.split("\\s+");
         String firstName = parts[0];
         String email = parts[parts.length - 1];
-        String lastName = credentials.split(email)[0].strip().split("\\s+", 2)[1];
+        String lastName = credentials.substring(credentials.indexOf(" "), credentials.lastIndexOf(" ")).trim();
         boolean emailExists = studentDatabase
                 .getAllStudents()
                 .values()

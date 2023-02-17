@@ -4,7 +4,7 @@ public enum Commands {
 
     EXIT("exit"),
     ADD_STUDENTS("add students"),
-    BACK("back"), LIST("list");
+    BACK("back");
 
     public final String name;
 

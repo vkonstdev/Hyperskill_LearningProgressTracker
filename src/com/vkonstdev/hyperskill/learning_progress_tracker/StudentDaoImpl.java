@@ -13,7 +13,7 @@ public class StudentDaoImpl implements StudentDao {
 
     @Override
     public Map<Integer, Student> getAllStudents() {
-        return new HashMap<>(students);
+        return students;
     }
 
     @Override
